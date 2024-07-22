@@ -1,31 +1,79 @@
-header {
-  background-color: #333;
-  color: white;
-  padding: 1em;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo h1 {
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-  display: flex;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-li {
-  margin-left: 1em;
+header {
+  background-color: #0062d1;
+  color: #ecf0f1;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  color: white;
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-menu > li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.main-menu a {
   text-decoration: none;
+  color: #ecf0f1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.main-menu a:hover {
+  background-color: #34495e;
+  border-radius: 5px;
+}
+
+.main-menu a i {
+  margin-right: 8px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #34495e;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 180px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu a {
+  padding: 10px 20px;
+  color: #ecf0f1;
+}
+
+.submenu a:hover {
+  background-color: #3b5998;
+  border-radius: 5px;
+}
+
+.main-menu li:hover .submenu {
+  display: block;
 }

@@ -18,15 +18,6 @@ import { CardModule } from 'primeng/card';
 import { TableModule } from 'primeng/table';
 import { InputNumberModule } from 'primeng/inputnumber';
 
-
-
-
-
-
-                                
-
-
-
 @NgModule({
   declarations: [
     TableComponentComponent,
@@ -47,9 +38,9 @@ import { InputNumberModule } from 'primeng/inputnumber';
     AppRoutingModule,
     BrowserAnimationsModule,
     DragDropModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
   ],
   providers: [],
-  bootstrap: [TableComponentComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
