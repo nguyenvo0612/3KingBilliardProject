@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-6">
+        <p-tabView styleClass="tabview-custom">
+            <p-tabPanel>
+                <ng-template pTemplate="header">
+                    <i class="pi pi-calendar"></i>
+                    <span>Phòng bàn</span>
+                </ng-template>
+                <p-card header="Bàn 1" [style]="{ width: '200px', height: '150px' }">
+                    <ng-template pTemplate="header">
+                        <img alt="Card"
+                            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fthegioibida.vn%2Fproduct%2Fban-lo-rasson-accura-mr-sung%2F&psig=AOvVaw1Gkz-JFi6rPkDdB5MgidHd&ust=1721645522710000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJC2-dP7t4cDFQAAAAAdAAAAABAE"
+                            width="100px" />
+                    </ng-template>
+                </p-card>
+
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+    <div class="col-6">
+        <h3>Bàn 1</h3>
+        <p-tabView styleClass="tabview-custom">
+            <p-tabPanel>
+                <ng-template pTemplate="header">
+                    <i class="pi pi-calendar"></i>
+                    <span>Hóa Đơn</span>
+                </ng-template>
+                <p-card>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-3" style="font-weight: bold;">1.Giờ chơi bi-a</div>
+                            <div class="col-2">Từ: 22:30</div>
+                            <div class="col-4">Tổng Giá: 120.000 vnđ</div>
+                            <div class="col-3">Giá:(60.000 đồng/giờ)</div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-3" style="font-weight: bold;">1.red-bull</div>
+                            <div class="col-3" >
+                                <p-inputNumber placeholder="Số lượng" mode="decimal" [showButtons]="true" inputId="minmax-buttons" [min]="0" [max]="100"> </p-inputNumber>
+                            </div>
+                            <div class="col-3">Tổng Giá: 20.000 vnđ</div>
+                            <div class="col-3">Giá:(20.000 đồng/1)</div>
+                        </div>
+                    </div>
+                </p-card>
+            </p-tabPanel>
+            <p-tabPanel header="Header II">
+                <ng-template pTemplate="header">
+                    <i class="pi pi-user"></i>
+                    <span>Menu</span>
+                </ng-template>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim
+                    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                    dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam
+                    eius modi.
+                </p>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</div>

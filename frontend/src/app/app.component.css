@@ -2,7 +2,9 @@
   display: flex;
   margin: 5px;
 }
-
+body {
+  font-family: var(--font-family);
+}
 app-content {
   width: 60%;
 }
