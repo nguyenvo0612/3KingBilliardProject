@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    padding: 20px;
+}
+.content{
+    display: flex;
+}
+
+.filter-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.filter-section h3 {
+    margin-top: 0;
+}
+.filter-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+.filter-section input[type="text"],
+.filter-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.un {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.table{
+    margin-left: 30px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #efefe8;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #daf2fc;
+    color: black;
+}
+td{
+    border-left: none;
+    border-right: none;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.actions {
+    margin-top: 20px;
+}
+
+.p_checkbox{
+    /* position: relative; */
+    /* padding-left: 35px; */
+    cursor: pointer;
+    /* margin-bottom: 12px; */
+    /* font-size: 22px; */
+}
+.p_checkbox input {
+    /* position: absolute; */
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee; */
+}
+/* Thay đổi màu nền khi di chuột qua checkbox */
+.p_checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+/* Thay đổi màu nền khi checkbox được chọn */
+.p_checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+/* Tạo dấu kiểm */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Hiển thị dấu kiểm khi checkbox được chọn */
+.p_checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.col1{
+    width: 20px;
+}
+.col2{
+    width: 20px;
+}
+
+.categories{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.actions button {
+    background-color: #449e4c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.actions button:hover {
+    background-color: #449e4c;
+}
+.textB{
+    margin-left: 10px;
+}
+.groupG{
+    display: flex;
+}
+.iSearch{
+    align-content: center;
+}
+.btnAll{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
